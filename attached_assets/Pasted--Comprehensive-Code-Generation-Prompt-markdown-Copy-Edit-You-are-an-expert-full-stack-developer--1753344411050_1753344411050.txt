@@ -1,0 +1,78 @@
+🛠️ Comprehensive Code Generation Prompt
+markdown
+Copy
+Edit
+You are an expert full‑stack developer. Generate a **Next.js** app (TypeScript) using the **app router**, styled with **Tailwind CSS**, deployed as a static export to **GitHub Pages**. The project is for an open‑source organization building free & premium software for developers and students. It must include:
+
+1. Configuration:
+   • `next.config.js` with `output: "export"`, proper `basePath` and `assetPrefix` set for GH Pages :contentReference[oaicite:1]{index=1}.
+   • `package.json` with `"homepage"` field, and scripts:
+     - `dev`, `build`, `export`,
+     - `predeploy`: `npm run build && next export`,
+     - `deploy`: `gh-pages -d out`.
+   • `.nojekyll` in `public` and GitHub Actions workflow `.github/workflows/deploy.yml` that builds and deploys to GH Pages :contentReference[oaicite:2]{index=2}.
+
+2. File/Folder Structure following industry best‑practices:
+/src
+/app
+/layout.tsx
+/page.tsx
+/projects
+/[slug]/page.tsx
+/donate
+/about
+/components
+Navbar.tsx, Footer.tsx, Button.tsx, ProjectCard.tsx, ToggleTheme.tsx, etc.
+/lib
+github.ts (GitHub API fetch),
+seo.ts,
+tests/
+/public
+tailwind.config.ts
+postcss.config.mjs
+next.config.js
+tsconfig.json
+.eslintrc.js
+jest.config.js
+cypress.config.ts
+
+markdown
+Copy
+Edit
+
+3. Pages:
+- **Home**: Hero with CTA ("Browse Projects", "Donate", "Get Started"), featured free/premium tools.
+- **Projects**: Static generation with `generateStaticParams` + `getStaticProps`, grid of cards, badge “Free”/“Premium”.
+- **Project Details**: Full info, screenshots, install instructions, license, star count, “Star on GitHub” and “Contribute” buttons.
+- **Donate**: Info text, **GitHub Sponsors** button, optional **Ko‑fi** embed, responsive layout.
+- **About/Contact**: Org mission, team cards (photo, name, role, GitHub/LinkedIn), contact form placeholder.
+
+4. Global Setup:
+- **Navbar/Footer** on every page.
+- Responsive mobile‑first Tailwind design.
+- Light/dark mode toggle persisted in `localStorage`.
+- Basic animations or scroll‑in effects (Tailwind transitions or Framer Motion).
+- Accessible HTML (ARIA roles, semantic tags, keyboard nav, color contrast).
+
+5. SEO:
+- `<head>` metadata: title, description, OG tags.
+- Favicon and minimal PWA manifest.
+
+6. Testing & Code Quality:
+- ESLint + Prettier config.
+- **Jest unit tests** for components.
+- **Cypress or Playwright integration tests** for flows (theme toggle, navigation).
+- Optional fuzzy tests for `Button`, `ProjectCard`.
+- GitHub Actions workflow for CI: run lint, type check, build, test, export & deploy.
+
+7. README:
+- Setup/develop/test/deploy instructions.
+- Env vars (e.g. GITHUB_TOKEN if needed).
+- Donation links info.
+
+8. Bonus:
+- Ensure accessibility (e.g. Lighthouse score).
+- SEO meta optimization for each page.
+- Smooth theme transition animations.
+
+:contentReference[oaicite:3]{index=3}
