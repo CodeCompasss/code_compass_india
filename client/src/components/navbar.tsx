@@ -34,7 +34,7 @@ export function Navbar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-professional-teal to-emerald-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-professional-blue to-blue-accent rounded-lg flex items-center justify-center">
                 <Compass className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-gray-900 dark:text-white">CodeCompass</span>
@@ -47,15 +47,15 @@ export function Navbar() {
               <Link key={item.name} href={item.href}>
                 <span className={`font-medium transition-colors cursor-pointer ${
                   isActive(item.href)
-                    ? 'text-professional-teal dark:text-emerald-accent'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-professional-teal dark:hover:text-emerald-accent'
+                    ? 'text-professional-blue dark:text-blue-accent'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-professional-blue dark:hover:text-blue-accent'
                 }`}>
                   {item.name}
                 </span>
               </Link>
             ))}
             <Link href="/donate">
-              <Button className="bg-emerald-accent hover:bg-emerald-600 text-white">
+              <Button className="bg-blue-accent hover:bg-blue-600 text-white">
                 Donate
               </Button>
             </Link>
@@ -86,7 +86,7 @@ export function Navbar() {
                       <span 
                         className={`block px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
                           isActive(item.href)
-                            ? 'bg-emerald-accent/10 text-professional-teal dark:text-emerald-accent'
+                            ? 'bg-blue-accent/10 text-professional-blue dark:text-blue-accent'
                             : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                         }`}
                         onClick={() => setIsOpen(false)}
@@ -97,7 +97,7 @@ export function Navbar() {
                   ))}
                   <Link href="/donate">
                     <Button 
-                      className="w-full bg-emerald-accent hover:bg-emerald-600 text-white mt-4"
+                      className="w-full bg-blue-accent hover:bg-blue-600 text-white mt-4"
                       onClick={() => setIsOpen(false)}
                     >
                       Donate

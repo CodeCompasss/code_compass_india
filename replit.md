@@ -42,7 +42,7 @@ Preferred communication style: Simple, everyday language.
 - Dark/light theme support with theme provider
 - Responsive design with mobile-first approach
 - Custom CSS variables for consistent theming
-- Professional color palette (navy, teal, emerald accents)
+- Professional blue color palette (blue accent, professional blue)
 
 ### Page Structure
 - **Home**: Hero section with 3D compass animation, featured projects, statistics

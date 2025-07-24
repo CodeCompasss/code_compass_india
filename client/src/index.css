@@ -24,11 +24,11 @@
   --ring: hsl(150, 80%, 40%);
   --radius: 0.75rem;
   
-  /* Professional palette */
+  /* Professional blue palette */
   --navy-900: hsl(222, 84%, 4.9%);
   --slate-blue: hsl(215, 28%, 17%);
-  --professional-teal: hsl(173, 80%, 36%);
-  --emerald-accent: hsl(142, 76%, 36%);
+  --professional-blue: hsl(220, 90%, 56%);
+  --blue-accent: hsl(210, 100%, 60%);
   --charcoal-gray: hsl(220, 13%, 18%);
 }
 
@@ -94,36 +94,36 @@
     background-color: var(--slate-blue);
   }
   
-  .bg-professional-teal {
-    background-color: var(--professional-teal);
+  .bg-professional-blue {
+    background-color: var(--professional-blue);
   }
   
-  .bg-emerald-accent {
-    background-color: var(--emerald-accent);
+  .bg-blue-accent {
+    background-color: var(--blue-accent);
   }
   
-  .text-professional-teal {
-    color: var(--professional-teal);
+  .text-professional-blue {
+    color: var(--professional-blue);
   }
   
-  .text-emerald-accent {
-    color: var(--emerald-accent);
+  .text-blue-accent {
+    color: var(--blue-accent);
   }
   
-  .hover\:bg-emerald-600:hover {
-    background-color: hsl(142, 76%, 30%);
+  .hover\:bg-blue-600:hover {
+    background-color: hsl(210, 100%, 50%);
   }
   
-  .hover\:bg-professional-teal:hover {
-    background-color: var(--professional-teal);
+  .hover\:bg-professional-blue:hover {
+    background-color: var(--professional-blue);
   }
   
-  .hover\:text-emerald-accent:hover {
-    color: var(--emerald-accent);
+  .hover\:text-blue-accent:hover {
+    color: var(--blue-accent);
   }
   
-  .hover\:text-professional-teal:hover {
-    color: var(--professional-teal);
+  .hover\:text-professional-blue:hover {
+    color: var(--professional-blue);
   }
 }
 

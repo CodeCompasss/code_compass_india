@@ -14,13 +14,13 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
   const getTypeColor = (type: string) => {
     return type === 'premium' 
       ? 'bg-gradient-to-r from-yellow-400 to-orange-500' 
-      : 'bg-emerald-accent';
+      : 'bg-blue-accent';
   };
 
   const getIconGradient = (type: string) => {
     return type === 'premium'
       ? 'from-blue-500 to-purple-600'
-      : 'from-emerald-accent to-professional-teal';
+      : 'from-blue-accent to-professional-blue';
   };
 
   return (
@@ -69,7 +69,7 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
               className={`flex-1 ${
                 project.type === 'premium'
                   ? 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700'
-                  : 'bg-emerald-accent hover:bg-emerald-600'
+                  : 'bg-blue-accent hover:bg-blue-600'
               } text-white`}
               onClick={onViewDetails}
             >

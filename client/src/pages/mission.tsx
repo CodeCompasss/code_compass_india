@@ -43,19 +43,19 @@ export default function Mission() {
       icon: Star,
       title: 'Innovation First',
       description: 'We pioneer cutting-edge development tools that solve real-world problems, always staying ahead of industry trends and developer needs.',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
     {
       icon: Github,
       title: 'Open Source Values',
       description: 'We believe in transparent, collaborative development that builds trust and fosters community-driven innovation across the globe.',
-      color: 'professional-teal',
+      color: 'professional-blue',
     },
     {
       icon: Code,
       title: 'Developer Experience',
       description: 'Every tool we create prioritizes exceptional user experience, comprehensive documentation, and seamless integration workflows.',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
   ];
 
@@ -116,7 +116,7 @@ export default function Mission() {
                 alt="Diverse software development team collaborating"
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-accent/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-accent/20 to-transparent rounded-2xl"></div>
             </motion.div>
           </div>
         </div>

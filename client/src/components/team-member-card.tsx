@@ -23,7 +23,7 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
             {member.name}
           </h3>
-          <p className="text-professional-teal dark:text-emerald-accent font-medium mb-4">
+          <p className="text-professional-blue dark:text-blue-accent font-medium mb-4">
             {member.role}
           </p>
           <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
@@ -35,7 +35,7 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
                 href={member.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-emerald-accent transition-colors"
+                className="text-gray-400 hover:text-blue-accent transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -47,7 +47,7 @@ export function TeamMemberCard({ member }: TeamMemberCardProps) {
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-professional-teal transition-colors"
+                className="text-gray-400 hover:text-professional-blue transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >

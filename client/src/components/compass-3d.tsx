@@ -38,7 +38,7 @@ export function Compass3D({ className = "", size = 'lg' }: Compass3DProps) {
     <div className={`relative ${sizeClasses[size]} ${className}`} ref={compassRef}>
       {/* Outer glow */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-emerald-accent/20 to-professional-teal/20 rounded-full"
+        className="absolute inset-0 bg-gradient-to-br from-blue-accent/20 to-professional-blue/20 rounded-full"
         animate={{ scale: [1, 1.05, 1] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -49,7 +49,7 @@ export function Compass3D({ className = "", size = 'lg' }: Compass3DProps) {
           {/* Main compass */}
           <div className="compass-inner relative">
             <svg 
-              className="w-32 h-32 text-emerald-accent drop-shadow-lg" 
+              className="w-32 h-32 text-blue-accent drop-shadow-lg" 
               fill="currentColor" 
               viewBox="0 0 24 24"
             >
@@ -68,7 +68,7 @@ export function Compass3D({ className = "", size = 'lg' }: Compass3DProps) {
       {/* Floating particles */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-2 h-2 bg-emerald-accent rounded-full"
+          className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-accent rounded-full"
           animate={{ 
             y: [0, -10, 0],
             opacity: [0.7, 1, 0.7]
@@ -76,7 +76,7 @@ export function Compass3D({ className = "", size = 'lg' }: Compass3DProps) {
           transition={{ duration: 3, repeat: Infinity, delay: 0 }}
         />
         <motion.div 
-          className="absolute top-1/3 right-1/4 w-1 h-1 bg-professional-teal rounded-full"
+          className="absolute top-1/3 right-1/4 w-1 h-1 bg-professional-blue rounded-full"
           animate={{ 
             y: [0, -8, 0],
             opacity: [0.5, 1, 0.5]
@@ -84,7 +84,7 @@ export function Compass3D({ className = "", size = 'lg' }: Compass3DProps) {
           transition={{ duration: 4, repeat: Infinity, delay: 1 }}
         />
         <motion.div 
-          className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-emerald-accent rounded-full"
+          className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-blue-accent rounded-full"
           animate={{ 
             y: [0, -12, 0],
             opacity: [0.6, 1, 0.6]

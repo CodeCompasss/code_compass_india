@@ -49,13 +49,13 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <div className="space-y-4">
-                <Badge className="bg-emerald-accent/20 text-emerald-accent border-emerald-accent/30 px-4 py-2">
+                <Badge className="bg-blue-accent/20 text-blue-accent border-blue-accent/30 px-4 py-2">
                   <Star className="w-4 h-4 mr-2" />
                   Open Source Excellence
                 </Badge>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                   Navigate Your{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-accent to-professional-teal">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-accent to-professional-blue">
                     Development Journey
                   </span>
                 </h1>
@@ -68,7 +68,7 @@ export default function Home() {
                 <Link href="/projects">
                   <Button 
                     size="lg" 
-                    className="bg-emerald-accent hover:bg-emerald-600 text-white px-8 py-4 text-lg font-semibold"
+                    className="bg-blue-accent hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold"
                   >
                     Browse Projects
                   </Button>
@@ -86,15 +86,15 @@ export default function Home() {
 
               <div className="flex items-center space-x-8 text-sm text-gray-300">
                 <div className="flex items-center space-x-2">
-                  <Github className="w-5 h-5 text-emerald-accent" />
+                  <Github className="w-5 h-5 text-blue-accent" />
                   <span>Open Source</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Star className="w-5 h-5 text-emerald-accent" />
+                  <Star className="w-5 h-5 text-blue-accent" />
                   <span>Free & Premium</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Code className="w-5 h-5 text-emerald-accent" />
+                  <Code className="w-5 h-5 text-blue-accent" />
                   <span>Developer Tools</span>
                 </div>
               </div>
@@ -205,8 +205,8 @@ export default function Home() {
                     transition={{ delay: index * 0.1 }}
                   >
                     <div className="flex items-center justify-center lg:justify-start mb-2">
-                      <Icon className="w-6 h-6 text-emerald-accent mr-2" />
-                      <div className="text-3xl lg:text-4xl font-bold text-emerald-accent">{value}</div>
+                      <Icon className="w-6 h-6 text-blue-accent mr-2" />
+                      <div className="text-3xl lg:text-4xl font-bold text-blue-accent">{value}</div>
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">{label}</div>
                   </motion.div>
@@ -214,7 +214,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-emerald-accent hover:bg-emerald-600 text-white">
+                <Button className="bg-blue-accent hover:bg-blue-600 text-white">
                   <Users className="w-4 h-4 mr-2" />
                   Join Community
                 </Button>
@@ -235,7 +235,7 @@ export default function Home() {
                 alt="Modern developer workspace with multiple monitors"
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-accent/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-accent/20 to-transparent rounded-2xl"></div>
             </motion.div>
           </div>
         </div>

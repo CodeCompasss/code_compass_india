@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <footer className="bg-gray-900 dark:bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company */}
           <div className="space-y-4">
@@ -15,7 +15,7 @@ export function Footer() {
               className="flex items-center space-x-3"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-professional-teal to-emerald-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-professional-blue to-blue-accent rounded-lg flex items-center justify-center">
                 <Compass className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">CodeCompass</span>
@@ -26,7 +26,7 @@ export function Footer() {
             <div className="flex space-x-4">
               <motion.a 
                 href="https://github.com/codecompass" 
-                className="text-gray-400 hover:text-emerald-accent transition-colors"
+                className="text-gray-400 hover:text-blue-accent transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -34,7 +34,7 @@ export function Footer() {
               </motion.a>
               <motion.a 
                 href="https://twitter.com/codecompass" 
-                className="text-gray-400 hover:text-professional-teal transition-colors"
+                className="text-gray-400 hover:text-professional-blue transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -42,7 +42,7 @@ export function Footer() {
               </motion.a>
               <motion.a 
                 href="https://linkedin.com/company/codecompass" 
-                className="text-gray-400 hover:text-emerald-accent transition-colors"
+                className="text-gray-400 hover:text-blue-accent transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -85,7 +85,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
             © {currentYear} CodeCompass. All rights reserved.
           </p>

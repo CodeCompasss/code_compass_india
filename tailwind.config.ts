@@ -69,8 +69,8 @@ export default {
           900: 'hsl(222, 84%, 4.9%)'
         },
         'slate-blue': 'hsl(215, 28%, 17%)',
-        'professional-teal': 'hsl(173, 80%, 36%)',
-        'emerald-accent': 'hsl(142, 76%, 36%)',
+        'professional-blue': 'hsl(220, 90%, 56%)',
+        'blue-accent': 'hsl(210, 100%, 60%)',
       },
       keyframes: {
         "accordion-down": {

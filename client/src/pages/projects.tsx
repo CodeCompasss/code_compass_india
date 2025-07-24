@@ -82,7 +82,7 @@ export default function Projects() {
           {/* Projects Grid */}
           {isLoading ? (
             <div className="text-center py-12">
-              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-accent"></div>
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-accent"></div>
               <p className="mt-4 text-gray-600 dark:text-gray-400">Loading projects...</p>
             </div>
           ) : filteredProjects.length > 0 ? (
@@ -100,20 +100,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Load More Button */}
-              <motion.div 
-                className="text-center mt-16"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-              >
-                <Button 
-                  size="lg" 
-                  className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100"
-                >
-                  Load More Projects
-                </Button>
-              </motion.div>
+
             </>
           ) : (
             // Empty state
@@ -138,7 +125,7 @@ export default function Projects() {
               {activeFilter !== 'all' && (
                 <Button 
                   onClick={() => setActiveFilter('all')}
-                  className="bg-emerald-accent hover:bg-emerald-600 text-white"
+                  className="bg-blue-accent hover:bg-blue-600 text-white"
                 >
                   View All Projects
                 </Button>

@@ -60,26 +60,26 @@ export default function Contact() {
       icon: MapPin,
       title: 'Headquarters',
       content: 'San Francisco, CA\nUnited States',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
     {
       icon: Mail,
       title: 'Email',
       content: 'hello@codecompass.org\nsupport@codecompass.org',
-      color: 'professional-teal',
+      color: 'professional-blue',
     },
     {
       icon: Github,
       title: 'Open Source',
       content: 'github.com/codecompass\nContribute & collaborate',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/codecompass', color: 'emerald-accent' },
-    { icon: Twitter, href: 'https://twitter.com/codecompass', color: 'professional-teal' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/codecompass', color: 'emerald-accent' },
+    { icon: Github, href: 'https://github.com/codeconpass', color: 'blue-accent' },
+    { icon: Twitter, href: 'https://twitter.com/codecompass', color: 'professional-blue' },
+    { icon: Linkedin, href: 'https://linkedin.com/company/codecompass', color: 'blue-accent' },
   ];
 
   return (
@@ -241,7 +241,7 @@ export default function Contact() {
                     <Button 
                       type="submit" 
                       size="lg"
-                      className="w-full bg-emerald-accent hover:bg-emerald-600 text-white"
+                      className="w-full bg-blue-accent hover:bg-blue-600 text-white"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? 'Sending Message...' : 'Send Message'}

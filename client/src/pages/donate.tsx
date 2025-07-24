@@ -9,19 +9,19 @@ export default function Donate() {
       icon: Star,
       title: 'Free Tools',
       description: 'Keep our essential developer tools completely free and accessible to everyone',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
     {
       icon: Code,
       title: 'Innovation',
       description: 'Fund research and development of cutting-edge developer productivity tools',
-      color: 'professional-teal',
+      color: 'professional-blue',
     },
     {
       icon: Users,
       title: 'Community',
       description: 'Support documentation, tutorials, and community resources for developers',
-      color: 'emerald-accent',
+      color: 'blue-accent',
     },
   ];
 
@@ -62,7 +62,7 @@ export default function Donate() {
             >
               <Card className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-emerald-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-blue-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Github className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4">GitHub Sponsors</h3>
@@ -71,7 +71,7 @@ export default function Donate() {
                   </p>
                   <Button 
                     onClick={handleGitHubSponsors}
-                    className="bg-emerald-accent hover:bg-emerald-600 text-white px-6 py-3 font-semibold"
+                    className="bg-blue-accent hover:bg-blue-600 text-white px-6 py-3 font-semibold"
                   >
                     <Github className="w-5 h-5 mr-2" />
                     Sponsor on GitHub
@@ -88,7 +88,7 @@ export default function Donate() {
             >
               <Card className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-professional-teal rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-professional-blue rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Coffee className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Ko-fi Support</h3>
@@ -97,7 +97,7 @@ export default function Donate() {
                   </p>
                   <Button 
                     onClick={handleKofiSupport}
-                    className="bg-professional-teal hover:bg-teal-600 text-white px-6 py-3 font-semibold"
+                    className="bg-professional-blue hover:bg-blue-600 text-white px-6 py-3 font-semibold"
                   >
                     <Coffee className="w-5 h-5 mr-2" />
                     Support on Ko-fi
